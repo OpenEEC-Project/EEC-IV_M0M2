@@ -1,442 +1,416 @@
-opts   :C N P S 
+opts :C G N P S
 
-rbase 72 180 
-rbase 74 280 
-rbase 76 380 
-rbase 78 480 
-rbase 7a 580 
-rbase 7c 780 
-rbase 90 83b98
-rbase f0 89a00 
-rbase f2 89cf4 
-rbase f4 89d0e 
-rbase f6 8a588 
-rbase f8 8a61c 
-rbase fa 8ac8a 
-rbase fc 8af24 
-rbase fe 8af2e 
+rbase 72 180        
+rbase 74 280        
+rbase 76 380        
+rbase 78 480        
+rbase 7a 580        
+rbase 7c 780        
+rbase 90 3b98        
+rbase f0 9a00        
+rbase f2 9cf4        
+rbase f4 9d0e        
+rbase f6 a588        
+rbase f8 a61c        
+rbase fa ac8a        
+rbase fc af24        
+rbase fe af2e        
 
+code    2000 2003          
+word    200a 200f          
+vect    2010 201f          
+byte    2020 2021          
+word    2022 2031          
+code    2032 21ca          
+vect    21cc 22a7          
+code    22a8 2555          
+vect    2556 25ab          
+code    25ac 2e4d                                       
+word    2e4e 2e4f          
+code    2e54 3a66          
+byte    3a67 3a67          
+code    3a6c 3b77          
+struct  3b78 3b95: Y : W P 4 X N           
+fill    3b96 3b97          
+timerl  3b98 3ba3: Y           
+vect    3ba4 3ba5          
+struct  3ba6 3bc5: W X R N : Y X O 4 : W X R N           
+struct  3bc6 3c0b  "InjTTab"  : W X R N O 10 : Y X O 10 : W X R N           
+word    3c0c 3c0d          
+code    3c0e 5e2d                              
+word    5e2e 5e31          
+word    5e34 5e35          
+code    5e3a 78e7          
+byte    78ed 78ed          
+code    78ee 9409                    
+code    940a 977a                    
+word    977c 977d          
+word    9780 9783          
+word    9786 9787          
+vect    9788 9793          
+code    9794 993f          
+word    9940 9941          
+code    9942 9998          
+byte    9999 9999          
+fill    99c4 99c9          
+word    9a00 9a09          
+byte    9a0a 9a0b          
+word    9a0c 9a11          
+byte    9a12 9a13          
+word    9a14 9a15          
+byte    9a16 9a17          
+word    9a18 9a29          
+func    9a2a 9aa1  "MAF_Transfer"  : W X : W X           
+func    9aa2 9aab  "Func17"  : Y X : Y X                     
+func    9aac 9abf  "Func14"  : W X : W X           
+func    9ac0 9acd  "Func5"  : S Y P 3 X : Y X           
+func    9ace 9add  "Func88"  : S Y P 3 X : Y X           
+func    9ade 9aeb  "Func89"  : S Y P 3 X : Y X           
+func    9aec 9b13  "Func95"  : W X : W X           
+table   9b14 9b77  "Table25"  : Y X O 10           
+word    9b78 9b79          
+word    9baa 9bab          
+func    9bdc 9bf3  "BAP_Transfer"  : W X : W X           
+func    9bf4 9c01  "Fn018"  : Y X : Y X           
+func    9c02 9c0b  "ISC_ECT_SC"  : S Y P 3 X : Y X           
+func    9c0c 9c2b  "Emm_lscale"  : W X : W X           
+func    9c2c 9c37  "FN022"  : S Y P 3 X : Y X           
+func    9c38 9c53  "Func4"  : S W P 5 X : W X           
+func    9c54 9c6f  "RPMscale"  : W X : W X           
+func    9c70 9c8b  "LdScale"  : W X : W X           
+func    9ca8 9cb1  "Func35"  : Y X : Y X           
+func    9cb2 9cbf  "Func34"  : Y X : Y X           
+func    9cc0 9cc9  "Func31"  : Y X : Y X           
+func    9cca 9cdf  "Func32"  : Y X : Y X           
+func    9ce0 9cf3  "Fn703a_Sensor_Tfr"  : Y X : S Y P 3 X           
+word    9cf4 9cf5          
+byte    9cf6 9cf6          
+word    9cf8 9cf9          
+byte    9cfa 9cfc          
+word    9cfe 9d03          
+byte    9d04 9d07          
+word    9d08 9d0f          
+byte    9d10 9d16          
+word    9d18 9d1d          
+byte    9d1e 9d1e          
+word    9d20 9d2b          
+byte    9d2c 9d2d          
+word    9d2e 9d35          
+byte    9d39 9d3f          
+word    9d40 9d43          
+byte    9d44 9d45          
+word    9d46 9d4d          
+byte    9d4e 9d51          
+word    9d52 9d53          
+byte    9d54 9d58          
+word    9d5a 9d63          
+byte    9d64 9d65          
+word    9d66 9d67          
+byte    9d6b 9d6d          
+word    9d6e 9d83          
+byte    9d84 9d8c          
+word    9d8e 9da7          
+byte    9da8 9db3          
+word    9db4 9db5          
+byte    9db6 9db6          
+word    9db8 9dcd          
+byte    9dce 9dce          
+word    9dd0 9de7          
+byte    9de8 9de8          
+word    9dea 9def          
+byte    9df0 9df6          
+word    9df8 9e01          
+byte    9e02 9e02          
+word    9e04 9e07          
+byte    9e08 9e08          
+word    9e0a 9e0b          
+byte    9e0c 9e0e          
+word    9e10 9e1b          
+byte    9e1c 9e1d          
+word    9e1e 9e21          
+byte    9e22 9e22          
+word    9e24 9e29          
+byte    9e2a 9e2d          
+word    9e2e 9e35          
+byte    9e36 9e37          
+word    9e38 9e3b          
+byte    9e3c 9e3e          
+byte    9e40 9e41          
+func    9e42 9e69  "Func10"  : W X : W X           
+func    9e6a 9e85  "Pk_Load_SL"  : W X : W X           
+func    9e86 9ea5  "Func7"  : W X : W X           
+func    9ea6 9eb5  "Func11"  : W X : W X           
+func    9eb6 9ec5  "Func12"  : W X : W X           
+func    9ec6 9ecf  "Func16"  : Y X : Y X           
+table   9ed0 9ed0  "Table3"  : Y X O 8           
+func    9f08 9f09  "Func20"  : S W P 5 X : W X           
+func    9f24 9f25  "Func22"  : W X : W X           
+func    9f3c 9f3d  "Func21"  : W X : W X           
+func    9f54 9f6b  "Func24"  : W X : W X           
+func    9f6c 9f87  "Func25"  : S W P 5 X : W X           
+table   9f88 9f9f  "Table5"  : Y X O 4           
+table   9fa1 9fb9  "Table4"  : Y X O 10           
+table   9fba 9fd3  "Table6"  : Y X O 5           
+func    9fd4 9ff7  "cnkpw_vs_ect"  : S W P 5 X : W X           
+func    9ff8 a005  "Func27"  : S Y P 3 X : Y X           
+func    a006 a021  "Func100"  : S W P 5 X : W X           
+func    a022 a03d  "Func101"  : W X : W X           
+func    a03e a059  "Func102"  : W X : W X           
+func    a05a a071  "Func46"  : W X : W X           
+func    a072 a089  "Func47"  : W X : W X           
+func    a08a a095  "Func39"  : S Y P 3 X : Y X           
+func    a096 a0ad  "Func45"  : W X : W X           
+func    a0ae a0af  "Func50"  : W X : W X           
+word    a0c4 a0c5          
+func    a0ce a0cf  "Func42"  : W X : W X           
+func    a0ea a0eb  "Func43"  : W X : W X           
+func    a106 a113  "Func48"  : S Y P 3 X : Y X           
+func    a114 a133  "Func26"  : S W P 5 X : W X           
+func    a134 a141  "Func41"  : Y X : Y X           
+table   a142 a191  "Fuel_OL_Stable"  : Y X O 10           
+table   a192 a1e1  "Startup_fuel"  : Y X O 10           
+table   a1e2 a231  "Base_Fuel"  : Y X O 10           
+func    a232 a251  "Func29"  : W X : W X           
+table   a252 a271  "Table10"  : Y X O 4           
+table   a272 a291  "Table9"  : Y X O 4           
+table   a292 a2b1  "Table8"  : Y X O 4           
+table   a2b2 a301  "TRT"  : Y X O 10           
+table   a302 a351  "Fuel_Equilib_Intake_Surface"  : Y X O 10           
+table   a352 a3a1  "Fuel_Equilib_Time_Constant"  : Y X O 10           
+func    a3a2 a3af  "Func49"  : Y X : Y X           
+func    a3b0 a3c1  "Func33"  : S Y P 3 X : Y X           
+func    a3c2 a3e1  "inj_bkpnt"  : W X : W X
+func    a3e2 a3f9  : Y : Y
+func    a3fa a40d  "HCAMSW" : W : W   
+func    a41c a44b  "Func84"  : W X : W X           
+func    a44c a457  "Func85"  : S Y P 3 X : Y X           
+func    a458 a465  "Func91"  : Y X : Y X           
+func    a466 a481  "Func81"  : W X : W X           
+func    a482 a483  "Func80"  : S Y P 3 X : Y X           
+func    a48e a48f  "Func82"  : W X : W X           
+byte    a49b a49b
+byte    a4a0 a4a0
+func    a4a2 a4a3  "Func83"  : Y X : Y X           
+table   a4aa a4d3  "ECT_AM_Mult"  : Y X O 7           
+byte    a4b0 a4b0          
+byte    a4ba a4ba          
+func    a4d4 a4d5  "Func94"  : Y X : Y X           
+func    a4e6 a4e7  "Func77"  : Y X : Y X           
+func    a4f8 a4f9  "Func75"  : Y X : Y X           
+func    a506 a521  "Func92"  : W X : W X           
+func    a522 a52d  "Func93"  : Y X : Y X           
+table   a52e a587  "mystery_table"  : Y X O 10           
+word    a588 a589          
+byte    a58a a58d          
+word    a58e a58f          
+byte    a590 a591          
+word    a592 a593          
+byte    a594 a595          
+word    a596 a597          
+byte    a598 a599          
+word    a59a a5a3          
+byte    a5a4 a5a7          
+word    a5a8 a5a9          
+byte    a5ac a5ac          
+word    a5ae a5b1          
+byte    a5b2 a5b4          
+word    a5b6 a5bb          
+byte    a5bf a5bf          
+word    a5c0 a5c3          
+byte    a5c4 a5cb          
+byte    a5d0 a5d4          
+word    a5d6 a5d7          
+byte    a5d8 a5d9          
+word    a5da a5e7          
+byte    a5e8 a5ea          
+word    a5ec a5ed          
+byte    a5ee a5f1          
+word    a5f2 a5f3          
+byte    a5f4 a5fb          
+word    a5fc a5fd          
+byte    a5fe a600          
+word    a602 a605          
+byte    a606 a606          
+func    a608 a609  "Func36"  : W X : W X           
+word    a61c a621          
+byte    a622 a623          
+word    a624 a62f          
+byte    a630 a632          
+word    a634 a637          
+byte    a638 a63a          
+word    a63c a63f          
+byte    a640 a643          
+word    a644 a657          
+byte    a658 a65a          
+word    a65c a663          
+byte    a664 a665          
+word    a666 a66f          
+byte    a670 a672          
+word    a674 a67b          
+byte    a67c a67d          
+word    a67e a685          
+byte    a686 a68f          
+word    a690 a697          
+byte    a698 a69c          
+word    a69e a6a3          
+byte    a6a4 a6a5          
+word    a6a6 a6a9          
+byte    a6aa a6ad          
+word    a6ae a6af          
+func    a6b0 a6b1  "Func61"  : S W P 5 X : W X           
+func    a6d4 a6d5  "Func65"  : W X : W X           
+func    a6e8 a6e9  "Func72"  : S W P 5 X : S W P 5 X           
+func    a708 a709  "Func71"  : S Y P 3 X : S Y P 3 X           
+func    a716 a717  "Func62"  : W X : S W P 5 X           
+func    a72a a72b  "Func74"  : Y X : S Y P 3 X           
+func    a736 a737  "Func99"  : W X : W X           
+func    a74a a74b  "Func44"  : Y X : Y X           
+func    a756 a757  "Func66"  : W X : W X           
+func    a77a a77b  "Func67"  : Y X : S Y P 3 X           
+func    a784 a785  "Func68"  : S Y P 3 X : S Y P 3 X           
+func    a792 a793  "Func69"  : S Y P 3 X : S Y P 3 X           
+word    a798 a799          
+func    a7a0 a7b5  "Func76"  : Y X : Y X           
+func    a7ba a7bb  "Func73"  : S Y P 3 X : Y X           
+func    a7c6 a7c7  "Fuel_dr_en"  : S W P 5 X : S W P 5 X           
+func    a7e6 a7e7  "Func64"  : Y X : Y X           
+table   a7f4 a843  "BaseSpk"  : Y X O 10           
+table   a844 a893  "SealSpk"  : Y X O 10           
+table   a894 a8e3  "AltoSpk"  : Y X O 10           
+table   a8e4 a933  "unknown"  : Y X O 10           
+table   a934 a951  "unknown1"  : Y X O 8           
+table   a952 a989  "Table19"  : Y X O 7           
+table   a98a a9c1  "Table20"  : Y X O 7           
+table   a9c2 aa11  "Table23"  : Y X O 10           
+func    aa12 aa13  "Func105"  : Y X : Y X           
+func    aa1e aa1f  "Func104"  : Y X : Y X           
+func    aa30 aa31  "Func103"  : Y X : Y X           
+byte    aa38 aa38          
+func    aa3a aa3b  "Func106"  : Y X : Y X           
+byte    aa3f aa3f          
+table   aa46 aa46  "Table27"  : Y X O 10           
+func    aa96 aab5  "Func3"  : W X : W X           
+table   aab6 ab19  "Table2"  : Y X O 10           
+table   ab1a ab1a  "Table1"  : Y X O 10           
+byte    ab5c ab5c          
+byte    ab66 ab66          
+func    ab7e aba9  "Func87"  : W X : W X           
+word    abaa abab          
+word    abdc abdd          
+table   ac0e ac0e  "Table26"  : Y X O 10           
+word    ac40 ac41          
+func    ac72 ac73  "Func86"  : W X : W X           
+word    ac8a ac8d          
+byte    ac8e ac8e          
+byte    ac90 ac90          
+byte    ac92 ac92          
+word    ac94 ac9d          
+word    aca0 aca1          
+byte    aca2 aca2          
+word    aca4 acab          
+byte    acac acac          
+word    acae acb1          
+byte    acb5 acb6          
+word    acb8 acbb          
+byte    acbc acbc          
+word    acbe acc1          
+byte    acc2 acc3          
+word    acc4 acc5          
+byte    acc6 acc6          
+word    acc8 acd5          
+byte    acd6 acd7          
+word    acd8 acd9          
+byte    acda acda          
+word    acdc ace5          
+byte    ace6 ace6          
+word    ace8 ad03          
+func    ad04 ad05  "Func70"  : Y X : Y X           
+func    ad12 ad13  "Func57"  : W X : W X           
+func    ad2a ad2b  "Func59"  : W X : W X           
+func    ad46 ad47  "Func51"  : Y X : Y X           
+func    ad50 ad51  "Func52"  : W X : W X           
+func    ad78 ad79  "Func55"  : S Y P 3 X : S Y P 3 X           
+func    ad84 ad85  "Func9"  : Y X : Y X           
+func    ad8e ad8f  "Func54"  : Y X : Y X           
+func    ad9a ad9b  "Func56"  : S Y P 3 X : Y X           
+func    ada4 ada5  "Func58"  : S W P 5 X : S W P 5 X           
+func    adc0 adc1  "Func53"  : W X : W X           
+func    ade8 ade9  "Func60"  : W X : W X           
+table   ae10 ae10  "Table16"  : Y X O 10           
+byte    ae1a ae1a          
+table   ae60 ae60  "Table17"  : Y X O 10           
+byte    ae6a ae6a          
+table   aeb0 aeff  "FN1328"  : Y X O 10           
+func    af00 af0b  "Func97"  : Y X : Y X           
+func    af0c af17  "Func98"  : Y X : Y X           
+func    af18 af23  "Func96"  : Y X : Y X           
+word    af24 af25          
+byte    af26 af28          
+word    af2a af2b          
+byte    af2c af2c          
+word    af2e af2f          
+byte    af30 af34          
+word    af36 af37          
+byte    af3a af3e          
+word    af40 af43          
+byte    af44 af45          
+word    af46 af49          
+byte    af4c af4d          
+word    af4e af5f          
+byte    af60 af61          
+word    af62 af63          
+byte    af64 af66          
+word    af68 af69          
+byte    af6a af6b          
+word    af6e af73          
+word    af78 af79          
+word    af7c af7d          
+word    af84 af8f          
+byte    af90 af90          
+word    af92 af95          
+byte    af96 af97          
+byte    af99 af99          
+word    af9a af9d          
+byte    af9e af9f          
+word    afa0 afa5          
+word    afa8 afa9          
+byte    afac afac          
+word    afb2 afb3          
+byte    afb5 afb5          
+word    afb6 afb9          
+byte    afba afba          
+word    afbe afc1          
+word    afc4 afc5          
+byte    afc6 afc6          
+byte    afc8 afc8          
+word    afca afcb          
+word    afd8 afe3          
+byte    afee aff6          
+byte    affa affa          
+byte    affd affe          
+word    b000 b007          
+byte    b022 b023          
+word    b024 b027          
+byte    b028 b028          
+byte    b02d b02d          
+word    b038 b039          
+word    b03e b03f          
+word    b044 b049          
+byte    b04a b04a          
+word    b05a b05d          
+byte    b068 b068          
+word    b06c b06f          
+word    b082 b083          
+word    b0a4 b0a5          
+byte    b0b5 b0b5          
+func    b0f0 b0f1 "Func18"  : Y X : Y X
+fill    b0f2 d4ef         
+code    d4f0 d58e                    
+fill    d58f edff
+table   ee00 eeff "Datalog_payloads" : W X O 8
+fill    ef00 ffff          
 
-code    2000 2003   
-word    200a 200f   
-vect    2010 201f   
-byte    2020 2021   
-word    2022 2031   
-code    2032 21ca   
-vect    21cc 22a7   
-code    22a8 2555   
-vect    2556 25ab   
-code    25ac 2663   
-code    2669 27ee   
-code    27f4 27f5   
-word    2800 2801   
-code    2820 284b
-word    2844 2845   
-code    284c 2c73   
-code    2c74 2e4d   
-word    2e4e 2e4f   
-code    2e54 36a5   
-code    36c7 3a66   
-byte    3a67 3a67   
-code    3a6c 3b77   
-struct  3b78 3b95: Y : W P 4 X N    
-fill    3b96 3b97   
-timerl  3b98 3ba3: Y    
-vect    3ba4 3ba5  "HSOTable"     
-struct  3ba6 3bc5: W X R N : Y X O 4 : W X R N    
-struct  3bc6 3c0b: W X R N : Y X O 6 : W X R N   
-word    3c0c 3c0d   
-code    3c0e 43bb   
-code    43be 45a6   
-byte    45b9 45b9
-byte    45bb 45bb
-code    45f0 45f0
-code    45f2 45f2
-code    45f4 45f5
-word    460c 460d   
-code    4698 557e   
-code    5580 5e2d   
-word    5e2e 5e31   
-word    5e34 5e35
-code    5e3a 78e7   
-byte    78ed 78ed
-code    78ee 870d   
-code    870e 9392   
-byte    9393 9393   
-code    940a 9591   
-code    95a2 977a   
-word    977c 977d   
-word    9780 9783   
-word    9786 9787
-vect    9788 9793   
-code    9794 993f   
-word    9940 9941   
-code    9942 9998   
-byte    9999 9999   
-fill    99c4 99c9   
-word    9a00 9a09   
-byte    9a0a 9a0b   
-word    9a0c 9a11   
-byte    9a12 9a13   
-word    9a14 9a15   
-byte    9a16 9a17   
-word    9a18 9a29   
-func    9a2a 9aa1  "MAF_Transfer"  : W X : W X    
-func    9aa2 9aaa  "Func17"  : Y X : Y X    
-byte    9aab 9aab   
-func    9aac 9abf  "Func14"  : W X : W X    
-func    9ac0 9acd  "Func5"  : S Y P 3 X : Y X    
-func    9ace 9add  "Func88"  : S Y P 3 X : Y X    
-func    9ade 9aeb  "Func89"  : S Y P 3 X : Y X    
-func    9aec 9b13  "Func95"  : W X : W X    
-table   9b14 9b77  "Table25"  : Y X O 10    
-word    9b78 9b79   
-word    9baa 9bab   
-func    9bdc 9bf3  "Func6"  : W X : W X    
-func    9bf4 9c01  "Fn018"  : Y X : Y X    
-func    9c02 9c0b  "Func15"  : S Y P 3 X : Y X    
-func    9c0c 9c2b  "Emm_lscale"  : W X : W X    
-func    9c2c 9c37  "FN022"  : S Y P 3 X : Y X    
-func    9c38 9c53  "Func4"  : S W P 5 X : W X    
-func    9c54 9c6f  "Func2"  : W X : W X 
-func    9c70 9c8b  "Func28"  : W X : W X 
-func    9ca8 9cb1  "Func35"  : Y X : Y X    
-func    9cb2 9cbf  "Func34"  : Y X : Y X    
-func    9cc0 9cc9  "Func31"  : Y X : Y X    
-func    9cca 9cdf  "Func32"  : Y X : Y X    
-func    9ce0 9cf3  "Func1"  : Y X : S Y P 3 X    
-word    9cf4 9cf5   
-byte    9cf6 9cf6   
-word    9cf8 9cf9   
-byte    9cfa 9cfc   
-word    9cfe 9d03   
-byte    9d04 9d07   
-word    9d08 9d0f   
-byte    9d10 9d16   
-word    9d18 9d1d   
-byte    9d1e 9d1e   
-word    9d20 9d2b   
-byte    9d2c 9d2d   
-word    9d2e 9d35   
-byte    9d39 9d3f   
-word    9d40 9d43   
-byte    9d44 9d45   
-word    9d46 9d4d   
-byte    9d4e 9d51   
-word    9d52 9d53   
-byte    9d54 9d58   
-word    9d5a 9d63   
-byte    9d64 9d65   
-word    9d66 9d67   
-byte    9d6b 9d6d   
-word    9d6e 9d83   
-byte    9d84 9d8c   
-word    9d8e 9da7   
-byte    9da8 9db3   
-word    9db4 9db5   
-byte    9db6 9db6   
-word    9db8 9dcd   
-byte    9dce 9dce   
-word    9dd0 9de7   
-byte    9de8 9de8   
-word    9dea 9def   
-byte    9df0 9df6   
-word    9df8 9e01   
-byte    9e02 9e02   
-word    9e04 9e07   
-byte    9e08 9e08   
-word    9e0a 9e0b   
-byte    9e0c 9e0e   
-word    9e10 9e1b   
-byte    9e1c 9e1d   
-word    9e1e 9e21   
-byte    9e22 9e22   
-word    9e24 9e29   
-byte    9e2a 9e2d   
-word    9e2e 9e35   
-byte    9e36 9e37   
-word    9e38 9e3b   
-byte    9e3c 9e3e   
-byte    9e40 9e41   
-func    9e42 9e69  "Func10"  : W X : W X    
-func    9e6a 9e85  "Func13"  : W X : W X    
-func    9e86 9ea5  "Func7"  : W X : W X    
-func    9ea6 9eb5  "Func11"  : W X : W X    
-func    9eb6 9ec5  "Func12"  : W X : W X    
-func    9ec6 9ecf  "Func16"  : Y X : Y X    
-table   9ed0 9ed0  "Table3"  : Y X O 8    
-func    9f08 9f09  "Func20"  : S W P 5 X : W X    
-func    9f24 9f25  "Func22"  : W X : W X    
-func    9f3c 9f3d  "Func21"  : W X : W X    
-func    9f54 9f6b  "Func24"  : W X : W X    
-func    9f6c 9f87  "Func25"  : S W P 5 X : W X    
-table   9f88 9f9f  "Table5"  : Y X O 4    
-table   9fa1 9fb9  "Table4"  : Y X O 10    
-table   9fba 9fd3  "Table6"  : Y X O 5    
-func    9fd4 9ff7  "cnkpw_vs_ect"  : S W P 5 X : W X    
-func    9ff8 a005  "Func27"  : S Y P 3 X : Y X    
-func    a006 a021  "Func100"  : S W P 5 X : W X    
-func    a022 a03d  "Func101"  : W X : W X    
-func    a03e a059  "Func102"  : W X : W X    
-func    a05a a071  "Func46"  : W X : W X    
-func    a072 a089  "Func47"  : W X : W X    
-func    a08a a095  "Func39"  : S Y P 3 X : Y X    
-func    a096 a0ad  "Func45"  : W X : W X    
-func    a0ae a0af  "Func50"  : W X : W X    
-word    a0c4 a0c5   
-func    a0ce a0cf  "Func42"  : W X : W X    
-func    a0ea a0eb  "Func43"  : W X : W X    
-func    a106 a113  "Func48"  : S Y P 3 X : Y X    
-func    a114 a133  "Func26"  : S W P 5 X : W X    
-func    a134 a141  "Func41"  : Y X : Y X    
-table   a142 a191  "Fuel_OL_Stable"  : Y X O 10    
-table   a192 a1e1  "Startup_fuel"  : Y X O 10    
-table   a1e2 a231  "Base_Fuel"  : Y X O 10    
-func    a232 a251  "Func29"  : W X : W X    
-table   a252 a271  "Table10"  : Y X O 4    
-table   a272 a291  "Table9"  : Y X O 4    
-table   a292 a2b1  "Table8"  : Y X O 4    
-table   a2b2 a301  "TRT"  : Y X O 10    
-table   a302 a351  "Fuel_Equilib_Intake_Surface"  : Y X O 10    
-table   a352 a3a1  "Fuel_Equilib_Time_Constant"  : Y X O 10    
-func    a3a2 a3af  "Func49"  : Y X : Y X    
-func    a3b0 a3c1  "Func33"  : S Y P 3 X : Y X    
-func    a3c2 a3e1  "inj_bkpnt"  : W X : W X    
-func    a41c a44b  "Func84"  : Y X : Y X    
-func    a44c a457  "Func85"  : S Y P 3 X : Y X    
-func    a458 a465  "Func91"  : Y X : Y X    
-func    a466 a481  "Func81"  : W X : W X    
-func    a482 a483  "Func80"  : S Y P 3 X : Y X    
-func    a48e a48f  "Func82"  : W X : W X    
-func    a4a2 a4a3  "Func83"  : Y X : Y X    
-table   a4aa a4aa  "Table24"  : Y X O 7    
-byte    a4b0 a4b0
-byte    a4ba a4ba
-func    a4d4 a4d5  "Func94"  : Y X : Y X    
-func    a4e6 a4e7  "Func77"  : Y X : Y X    
-func    a4f8 a4f9  "Func75"  : Y X : Y X    
-func    a506 a507  "Func92"  : W X : W X    
-func    a522 a52d  "Func93"  : Y X : Y X    
-table   a52e a587  "mystery_table"  : Y X O 10    
-word    a588 a589   
-byte    a58a a58d   
-word    a58e a58f   
-byte    a590 a591   
-word    a592 a593   
-byte    a594 a595   
-word    a596 a597   
-byte    a598 a599   
-word    a59a a5a3   
-byte    a5a4 a5a7   
-word    a5a8 a5a9   
-byte    a5ac a5ac
-word    a5ae a5b1   
-byte    a5b2 a5b4   
-word    a5b6 a5bb   
-byte    a5bf a5bf   
-word    a5c0 a5c3   
-byte    a5c4 a5cb   
-byte    a5d0 a5d4   
-word    a5d6 a5d7   
-byte    a5d8 a5d9   
-word    a5da a5e7   
-byte    a5e8 a5ea   
-word    a5ec a5ed   
-byte    a5ee a5f1   
-word    a5f2 a5f3   
-byte    a5f4 a5fb   
-word    a5fc a5fd   
-byte    a5fe a600   
-word    a602 a605   
-byte    a606 a606   
-func    a608 a609  "Func36"  : W X : W X    
-word    a61c a621   
-byte    a622 a623   
-word    a624 a62f   
-byte    a630 a632   
-word    a634 a637   
-byte    a638 a63a   
-word    a63c a63f   
-byte    a640 a643   
-word    a644 a657   
-byte    a658 a65a   
-word    a65c a663   
-byte    a664 a665   
-word    a666 a66f   
-byte    a670 a672   
-word    a674 a67b   
-byte    a67c a67d   
-word    a67e a685   
-byte    a686 a68f   
-word    a690 a697   
-byte    a698 a69c   
-word    a69e a6a3   
-byte    a6a4 a6a5   
-word    a6a6 a6a9   
-byte    a6aa a6ad   
-word    a6ae a6af   
-func    a6b0 a6b1  "Func61"  : S W P 5 X : W X    
-func    a6d4 a6d5  "Func65"  : W X : W X    
-func    a6e8 a6e9  "Func72"  : S W P 5 X : S W P 5 X    
-func    a708 a709  "Func71"  : S Y P 3 X : S Y P 3 X    
-func    a716 a717  "Func62"  : W X : S W P 5 X    
-func    a72a a72b  "Func74"  : Y X : S Y P 3 X    
-func    a736 a737  "Func99"  : W X : W X    
-func    a74a a74b  "Func44"  : Y X : Y X    
-func    a756 a757  "Func66"  : W X : W X    
-func    a77a a77b  "Func67"  : Y X : S Y P 3 X    
-func    a784 a785  "Func68"  : S Y P 3 X : S Y P 3 X    
-func    a792 a793  "Func69"  : S Y P 3 X : S Y P 3 X    
-word    a798 a799
-func    a7a0 a7b5  "Func76"  : Y X : Y X    
-func    a7ba a7bb  "Func73"  : S Y P 3 X : Y X    
-func    a7c6 a7c7  "Fuel_dr_en"  : S W P 5 X : S W P 5 X    
-func    a7e6 a7e7  "Func64"  : Y X : Y X    
-table   a7f4 a843  "BaseSpk"  : Y X O 10    
-table   a844 a893  "SealSpk"  : Y X O 10    
-table   a894 a8e3  "AltoSpk"  : Y X O 10    
-table   a8e4 a933  "unknown"  : Y X O 10    
-table   a934 a951  "Equilib_intake_sfc_fuel"  : Y X O 8    
-table   a952 a989  "Table19"  : Y X O 7    
-table   a98a a9c1  "Table20"  : Y X O 7    
-table   a9c2 aa11  "Table23"  : Y X O 10    
-func    aa12 aa13  "Func105"  : Y X : Y X    
-func    aa1e aa1f  "Func104"  : Y X : Y X    
-func    aa30 aa31  "Func103"  : Y X : Y X    
-byte    aa38 aa38
-func    aa3a aa3b  "Func106"  : Y X : Y X    
-byte    aa3f aa3f
-table   aa46 aa46  "Table27"  : Y X O 10    
-func    aa96 aab5  "Func3"  : W X : W X    
-table   aab6 ab19  "Table2"  : Y X O 10    
-table   ab1a ab1a  "Table1"  : Y X O 10    
-byte    ab5c ab5c
-byte    ab66 ab66
-func    ab7e ab7f  "Func87"  : W X : W X    
-word    abaa abab   
-word    abdc abdd   
-table   ac0e ac0e  "Table26"  : Y X O 10    
-word    ac40 ac41   
-func    ac72 ac73  "Func86"  : W X : W X    
-word    ac8a ac8d   
-byte    ac8e ac8e   
-byte    ac90 ac90   
-byte    ac92 ac92   
-word    ac94 ac9d   
-word    aca0 aca1   
-byte    aca2 aca2   
-word    aca4 acab   
-byte    acac acac   
-word    acae acb1   
-byte    acb5 acb6   
-word    acb8 acbb   
-byte    acbc acbc   
-word    acbe acc1   
-byte    acc2 acc3   
-word    acc4 acc5   
-byte    acc6 acc6   
-word    acc8 acd5   
-byte    acd6 acd7   
-word    acd8 acd9   
-byte    acda acda   
-word    acdc ace5   
-byte    ace6 ace6   
-word    ace8 ad03   
-func    ad04 ad05  "Func70"  : Y X : Y X    
-func    ad12 ad13  "Func57"  : W X : W X    
-func    ad2a ad2b  "Func59"  : W X : W X    
-func    ad46 ad47  "Func51"  : Y X : Y X    
-func    ad50 ad51  "Func52"  : W X : W X    
-func    ad78 ad79  "Func55"  : S Y P 3 X : S Y P 3 X    
-func    ad84 ad85  "Func9"  : Y X : Y X    
-func    ad8e ad8f  "Func54"  : Y X : Y X    
-func    ad9a ad9b  "Func56"  : S Y P 3 X : Y X    
-func    ada4 ada5  "Func58"  : S W P 5 X : S W P 5 X    
-func    adc0 adc1  "Func53"  : W X : W X    
-func    ade8 ade9  "Func60"  : W X : W X    
-table   ae10 ae10  "Table16"  : Y X O 10    
-byte    ae1a ae1a
-table   ae60 ae60  "Table17"  : Y X O 10    
-byte    ae6a ae6a
-table   aeb0 aeff  "FN1328"  : Y X O 10    
-func    af00 af0b  "Func97"  : Y X : Y X    
-func    af0c af17  "Func98"  : Y X : Y X    
-func    af18 af23  "Func96"  : Y X : Y X    
-word    af24 af25   
-byte    af26 af28   
-word    af2a af2b   
-byte    af2c af2c   
-word    af2e af2f   
-byte    af30 af34   
-word    af36 af37   
-byte    af3a af3e   
-word    af40 af43   
-byte    af44 af45   
-word    af46 af49   
-byte    af4c af4d   
-word    af4e af5f   
-byte    af60 af61   
-word    af62 af63   
-byte    af64 af66   
-word    af68 af69   
-byte    af6a af6b   
-word    af6e af73   
-word    af78 af79   
-word    af7c af7d   
-word    af84 af8f   
-byte    af90 af90   
-word    af92 af95   
-byte    af96 af97   
-byte    af99 af99   
-word    af9a af9d   
-byte    af9e af9f   
-word    afa0 afa5   
-word    afa8 afa9   
-byte    afac afac   
-word    afb2 afb3   
-byte    afb5 afb5   
-word    afb6 afb9
-byte    afba afba
-word    afbe afc1   
-word    afc4 afc5   
-byte    afc6 afc6   
-byte    afc8 afc8
-word    afca afcb   
-word    afd8 afe3   
-byte    afee aff4   
-byte    aff2 aff4   
-byte    aff5 aff6   
-byte    affa affa
-byte    affd affe
-word    b000 b001
-word    b002 b007   
-byte    b022 b023
-word    b024 b027   
-byte    b028 b028   
-byte    b02d b02d   
-word    b038 b039   
-word    b03e b03f
-word    b044 b049   
-byte    b04a b04a   
-word    b05a b05d   
-byte    b068 b068
-word    b06c b06f
-word    b082 b083   
-word    b0a4 b0a5
-byte    b0b5 b0b5
-func    b0f0 b0f1  "Func18"  : Y X : Y X    
-word    bd00 bd01
-word    bd0e bd0f
-code    c006 d58e
-byte    de38 de38
-word    e002 e003
-code    e006 ee15
-code    ee17 ee21
-code    ee23 ee3f
-code    ee41 ee44
-fill    ee80 ffff   
-
-xcode   ee80 ffff
+xcode   efff ffff
 
 sub 2032 "Reset_All"  
 sub 2119 "Sub58"  
@@ -477,31 +451,31 @@ sub 2960 "Sub130"
 sub 2c74 "Sub3"  
 sub 2c77 "Sub4"  
 sub 2c7b "Sub5"  
-sub 2c87 "Sub6"  
+sub 2c87 "updTCodes"  
 sub 2cc4 "Sub132"  
 sub 2d62 "clear_KAM1"  
 sub 2d67 "clear_KAM"  
 sub 2d73 "Set_STO"  
 sub 2d7b "Reset_STO"  
-sub 2d85 "Getbytes"  : Y 
+sub 2d85 "Getbytes"  : Y               
 sub 2d9d "Sub8"  
-sub 2d9e "Xfilter"  : Y O 2       
+sub 2d9e "Xfilter"  : Y O 2               
 sub 2db3 "Sub9"  
-sub 2dcc "Sub10"  : W N : W N 
+sub 2dcc "upd_flflg"  : W N : W N               
 sub 2df1 "Do_KOEO"  
 sub 2e28 "Do_Csum"  
 sub 2e54 "Sub75"  
 sub 2ebd "Sub76"  
 sub 2f41 "Sub154"  
-sub 2f5f "Sub143"  : Y O 5       
-sub 2f67 "Sub11"  : W N : W N 
-sub 2f6a "Sub12"  : W N : W N 
-sub 2fa6 "Sub13"  : E 3 f0 N 
-sub 2fb0 "GetAddr"  
+sub 2f5f "Sub143"  : Y O 5               
+sub 2f67 "Sub11"  : W N : W N               
+sub 2f6a "Sub12"  : W N : W N               
+sub 2fa6 "GetAddr1"  : E 3 f0 N  
+sub 2fb0 "GetAddr"               
 sub 2fcb "Sub78"  
 sub 2fec "Sub79"  
 sub 2fff "Sub77"  
-sub 3075 "TestIO"  : Y O 4       
+sub 3075 "TestIO"  : Y O 4               
 sub 308d "Openchk"  
 sub 30b5 "Sub14"  
 sub 30d1 "Sub150"  
@@ -510,9 +484,9 @@ sub 3103 "Sub124"
 sub 3114 "Sub81"  
 sub 3127 "Sub82"  
 sub 3129 "Sub61"  
-sub 316d "SaveTCode1"  : Y       
+sub 316d "SaveTCode1"  : Y               
 sub 3171 "SaveTCode"  
-sub 317f "Sub155"  : Y O 7       
+sub 317f "ChkSensor"  : Y O 7               
 sub 319e "Sub83"  
 sub 325a "Sub85"  
 sub 3279 "Sub86"  
@@ -525,10 +499,10 @@ sub 333a "Sub91"
 sub 3363 "Sub92"  
 sub 337c "Sub93"  
 sub 33a8 "Sub159"  
-sub 33b0 "Sub163"  : Y O 2       
-sub 33b5 "Sub161"  : Y O 2       
+sub 33b0 "Scale_Time_delta"  : Y O 2               
+sub 33b5 "Scale_Time_delta2"  : Y O 2               
 sub 33ff "Sub160"  
-sub 3404 "Sub141"  : Y O 2       
+sub 3404 "Sub141"  : Y O 2               
 sub 3415 "Sub94"  
 sub 3421 "Sub95"  
 sub 343c "Sub96"  
@@ -536,13 +510,13 @@ sub 3482 "Sub97"
 sub 3491 "Sub164"  
 sub 349e "Sub98"  
 sub 34e0 "Sub99"  
-sub 351e "Sub156"  : Y O 8       
+sub 351e "Sub156"  : Y O 8               
 sub 3534 "Sub63"  
 sub 3564 "Sub100"  
 sub 3571 "Sub101"  
 sub 358e "Sub102"  
 sub 35c0 "Sub103"  
-sub 35df "Sub104"  
+sub 35df "Sub104"
 sub 3640 "Sub135"  
 sub 369e "Sub110"  
 sub 36c7 "Sub55"  
@@ -565,14 +539,15 @@ sub 3b47 "Read_AD"
 sub 3bc6 "InjTTab"  
 sub 3c0e "Clr_Cell"  
 sub 3c13 "Check_KAM"  
-sub 3c7f "Sub170"  
+sub 3c7f "Send_HSO_Cmd"  
+sub 3cc4 "Send_HSO"  
 sub 3cfc "Sub16"  
 sub 3cfe "Do_CmdN"  
 sub 3d0e "Sub17"  
 sub 3d10 "Do_CmdP"  
 sub 3d28 "Sub6"  
-sub 3d37 "Sub175"  
-sub 3dcb "Sub5"  
+sub 3d37 "Read_HSI"  
+sub 3dcb "I_HSO_1"  
 sub 3fe2 "Sub18"  
 sub 40ad "IPT_HSO_1"  
 sub 40ca "IPT_Ignore"  
@@ -611,24 +586,24 @@ sub 536c "Sub194"
 sub 538e "Sub176"  
 sub 53d5 "Sub23"  
 sub 5400 "Sub113"  
-sub 5443 "Sub24"   : F 1 1 W S S : F 1 32 W S S : F 1 32 Y S S
-sub 5448 "Sub25"   : F 1 1 W S S : F 1 32 W S S : F 1 32 Y S S
-sub 544b "Sub26"  : E 4 f0 N : Y O 2  : F 1 32 W S S : F 1 32 Y S S : F 1 1 W S S
-sub 544e  : F 1 1 W S S : F 1 32 W S S : F 1 32 Y S S
-sub 5453 "Sub27"   : F 1 32 Y S S
-sub 54b9 "Sub28"  : E 4 f0 N : Y O 2  : F 1 32 W S S : F 1 1 W S S
-sub 54be "Sub29"   : F 1 1 W S S : F 1 32 W S S
-sub 54c1 "Sub30"   : F 1 1 W S S : F 1 32 W S S
-sub 54c4 "Sub31"  : E 4 f0 N : Y O 2  : F 1 32 W S S : F 1 1 W S S
-sub 5500 "Sub119"   : F 2 38 34 Y
+sub 5443 "SUByteLU"   : F 1 1 W S S : F 1 32 Y S S : F 1 32 Y S S : F 1 1 W S S              
+sub 5448 "SSByteLU"   : F 1 32 Y S S : F 1 1 W S S : F 1 32 W S S : F 1 1 W S S : F 1 32 Y S S              
+sub 544b "USByteLU"  : E 4 f0 N : Y O 2  : F 1 32 W S S : F 1 1 W S S : F 1 32 Y S S : F 1 32 Y S S
+sub 544e "UUByteLU"   : F 1 32 Y S S : F 1 32 Y S S
+sub 5453 ""            
+sub 54b9 "SUWordLU"  : E 4 f0 N : Y O 2  : F 1 32 W S S : F 1 32 W S S : F 1 32 W S S              
+sub 54be "SSWordLU"   : F 1 32 W S S : F 1 1 W S S : F 1 1 W S S : F 1 32 W S S              
+sub 54c1 "Sub30"   : F 1 1 W S S : F 1 32 W S S : F 1 32 W S S              
+sub 54c4 "UUWordLU"  : E 4 f0 N : Y O 2  : F 1 32 W S S : F 1 32 W S S              
+sub 5500 "Sub119"   : F 2 38 34 W              
 sub 552d "UFilter1"  
 sub 552f "SFilter"  
 sub 5534 "FilterX"  
 sub 5536 "Sub32"  
 sub 555f "Calc_FFact"  
-sub 5582 "UTabLU"   : F 2 38 34 Y      
-sub 558e  : F 2 38 34 Y
-sub 5591 "UTabLU"   : F 2 38 34 Y : F 2 38 34 Y      
+sub 5582 "UTabLU"   : F 2 38 34 W              
+sub 558e "" : F 2 38 34 Y : F 2 38 34 W : F 2 38 34 W              
+sub 5591 "UTabLU"   : F 2 38 34 W              
 sub 55c6 "TabInterp"  
 sub 55f6 "Check_Timers"  
 sub 562d "set_rpm_flgs"  
@@ -650,7 +625,7 @@ sub 60e0 "Update_EGR"
 sub 6156 "Sub68"  
 sub 618f "Chk_speed_limit"  
 sub 61de "Do_Accelpump?"  
-sub 62ad 
+sub 62ad "Sub1"  
 sub 6300 "Sub211"  
 sub 634b "Sub31"  
 sub 63cf "Calc_Fuel"  
@@ -705,7 +680,7 @@ sub 7d54 "Sub242"
 sub 7ec3 "Sub243"  
 sub 7f29 "Update_dwell"  
 sub 8023 "Update_idle"  
-sub 80b7 "Sub244"  : Y N 
+sub 80b7 "Sub244"  : Y N               
 sub 82d9 "Sub245"  
 sub 8328 "Sub246"  
 sub 83e8 "Sub247"  
@@ -748,16 +723,9 @@ sub 98ec "Sub111"
 sub 98fc "Sub112"  
 sub 990c "Check_KAM_1"  
 sub 992a "Sub46"  
-sub 993c "Sub51"
-sub 9d04 "Dasmph"
-sub 9d05 "Dasmhyst" 
-sub c006 "Sub47"  
-sub c009 "Sub48"  
-sub d006 "Sub49"  
-sub d009 "Sub50"  
-sub d4f0 "Sub51"  
-sub e006 "Sub52"  
-sub e009 "Sub53"  
+sub 993c "Sub51"  
+sub 9d04 "Dasmph"  
+sub 9d05 "Dasmhyst"  
 
 sym 0  "ZERO"
 sym 1  "ZERO"
@@ -766,8 +734,10 @@ sym 2  "CPU_OK" :T 6
 sym 3  "LIO_PORT"
 sym 4  "AD_LO"
 sym 4  "AD_Cmd" :W
+sym 4  "AD_Cmd" :T 0 W
 sym 5  "AD_HI"
 sym 5  "WDG_Timer" :W
+sym 5  "WDG_Timer" :T 0 W
 sym 6  "IO_TIMER"
 sym 7  "AD_TMD_LO"
 sym 8  "INT_MASK"
@@ -783,17 +753,20 @@ sym b  "HSI_SAMPLE"
 sym c  "HSI_MASK"
 sym d  "HSI_DATA"
 sym d  "HSO_Cmd" :W
+sym d  "HSO_Cmd" :T 0 W
 sym e  "HSI_TIME"
 sym e  "HSO_Time" :W
+sym e  "HSO_Time" :T 0 W
 sym f  "HSI_TIME_HI"
 sym f  "HSO_Time_Hi" :W
+sym f  "HSO_Time_Hi" :T 0 W
 sym 10  "STACK"
 sym 12  "Tmr_OVF_cnt"
 sym 14  "HSO_IPEND2"
 sym 15  "Sub22"
 sym 16  "HSO_IMASK2"
 sym 17  "LSSI_B"
-sym 18  "HOS_STATE"
+sym 18  "HSO_STATE"
 sym 19  "LSSO_C"
 sym 1a  "HSI_MODE"
 sym 1c  "HSO_TIMEC"
@@ -808,8 +781,25 @@ sym 24  "Console_flag" :T 4
 sym 24  "Nactmr_On" :T 5 
 sym 24  "Atmr2_On" :T 6 
 sym 24  "Tsegre_On" :T 7 
-sym 25  "Mhpfd_neg"
-sym 26  "Archflg"
+sym 25  "Include_ae" :T 0 
+sym 25  "Warm_up" :T 1 
+sym 25  "Mhpfd_neg" :T 2 
+sym 25  "Fam_flg" :T 3 
+sym 25  "Slq2" :T 4 
+sym 25  "Slq1" :T 5 
+sym 25  "Chkair" :T 6 
+sym 25  "Chkair_flag" :T 7
+sym 25  "Flags_25"
+#sym 26  "Archflg"
+SYM  26 "Imfmflg" : T 0
+SYM  26 "Archflg" : T 1
+SYM  26 "Nflg" : T 2
+SYM  26 "Jmpflg" : T 3
+SYM  26 "Trsprpml" : T 4
+SYM  26 "Pipflg" : T 5
+SYM  26 "Dndsup" : T 6
+SYM  26 "Hcamfg" : T 7
+SYM  26 "Flags_26"
 sym 27  "Flag_27"
 sym 27  "Asp_input" :T 0 
 sym 27  "Declflg" :T 1 
@@ -819,6 +809,24 @@ sym 27  "Ecadq3" :T 4
 sym 27  "Ecadq2" :T 5 
 sym 27  "Ecadq1" :T 6 
 sym 27  "Usaflg" :T 7 
+sym 28  "Flags_28"
+sym 28  "Egren" :T 0 
+sym 28  "Ptpflg" :T 1 
+sym 28  "Newsa" :T 2 
+sym 28  "Efflg1" :T 3 
+sym 28  "Ramp_rich" :T 4 
+sym 28  "Egoste" :T 5 
+sym 28  "Fpwq3" :T 6 
+sym 28  "Kam_error" :T 7
+SYM  29 "Hltmr_Off" : T +0
+SYM  29 "Taq6" : T +1
+SYM  29 "Qtpclol" : T +2
+SYM  29 "Taq1" : T +3
+SYM  29 "Iacflg" : T +4
+SYM  29 "Aeoflg" : T +5
+SYM  29 "Evpout" : T +6
+SYM  29 "Egrflg" : T +7
+SYM  29 "Flags_29"
 sym 2a  "VIP_flags"
 sym 2a  "Vscdt" :T 0 
 sym 2a  "Vscst" :T 1 
@@ -827,17 +835,24 @@ sym 2a  "Disable_running" :T 3
 sym 2a  "Disable_nostart" :T 4 
 sym 2a  "Self_test" :T 5 
 sym 2a  "No_start" :T 6 
-sym 2a  "Disable_vscdt" :T 7 
-SYM  2b "Rvip_cyl_quit" : T +0
-SYM  2b "Rvip_cyl_bal" : T +1
-SYM  2b "Sto_trigger" : T +2
-SYM  2b "Error_detected" : T +3
-SYM  2b "Disable_isc" : T +4
-SYM  2b "Stiflg" : T +5
-SYM  2b "Egoste2" : T +6
-SYM  2b "Egoste1" : T +7
-SYM  2b "Flags_2B"
-sym 2d  "First_PIP"
+sym 2a  "Disable_vscdt" :T 7  
+sym 2c  "Flags_2C"
+sym 2c  "Idm_bypass" :T 0 
+sym 2c  "Kflg_local" :T 1 
+sym 2c  "Wigflg" :T 3 
+sym 2c  "Sto_hyper" :T 4 
+sym 2c  "Disable_eolt" :T 5 
+sym 2c  "Egrfg2" :T 6 
+sym 2c  "Egrfg1" :T 7 
+SYM  2d "Spout_pending" : T 0
+SYM  2d "Undsp_trans" : T 1
+SYM  2d "Double_edge" : T 2
+SYM  2d "No_fuel_save" : T 3
+SYM  2d "First_pip" : T 4
+SYM  2d "Ctflg" : T 5
+SYM  2d "Tipflg" : T 6
+SYM  2d "Tblsflg" : T 7
+SYM  2d "Flags_2D"
 sym 2e  "Flags_2E"
 sym 2e  "New_ibeta" :T 2 
 sym 2e  "Simultaneous" :T 3 
@@ -845,11 +860,48 @@ sym 2e  "Sync_up_fuel" :T 4
 sym 2e  "Base_fuel" :T 5 
 sym 2e  "Synflg" :T 6 
 sym 2e  "Fuel_in_sync" :T 7 
+sym 2f  "Maf_pip"
 sym 46  "Pump"
+sym 4a  "Flags_4A"
+sym 4a  "Bypass_time" :T 1 
+sym 4a  "Bypass_limit" :T 2 
+sym 4a  "Immediate" :T 3 
+sym 4a  "No_service" :T 4 
+sym 4a  "Late_output" :T 5 
+sym 4a  "Queued" :T 6 
+sym 4a  "No_queue" :T 7
+SYM  4d "Pip_double" : T +0
+SYM  4d "Sto_quick" : T +1
+SYM  4d "Clkext_ovr" : T +2
+SYM  4d "Knock_detected" : T +3
+SYM  4d "Pending" : T +4
+SYM  4d "Canceled" : T +5
+SYM  4d "Knock_enabled" : T +6
+SYM  4d "Knock_occurred" : T +7
+SYM  4d "Flags_4D"
+SYM  4f "Rvip_cyl_quit" : T +0
+SYM  4f "Rvip_cyl_bal" : T +1
+SYM  4f "Sto_trigger" : T +2
+SYM  4f "Error_detected" : T +3
+SYM  4f "Disable_isc" : T +4
+SYM  4f "Stiflg" : T +5
+SYM  4f "Egoste2" : T +6
+SYM  4f "Egoste1" : T +7
+SYM  4f "Flags_4F"
 sym 4c  "New_RPM"
 sym 80  "Event_Time"
 sym 82  "Event_TimeH"
+sym 83  "Cmd"
 sym 89  "Last_HSI"
+sym 8d  "New_irqs"
+sym 8d  "Pip_irq" :T 0 
+sym 8d  "Knk_irq" :T 1 
+sym 8d  "Bap_irq" :T 2 
+sym 8d  "Cid_irq" :T 5 
+sym 8d  "Mph_irq" :T 6 
+sym 8d  "Idm_irq" :T 7 
+sym 92  "RefTime"
+sym 96  "TPtr"
 sym 9b  "Bg_point"
 sym a0  "AM"
 sym a2  "Nrmces"
@@ -857,15 +909,22 @@ sym a4  "Nrmrld"
 sym a6  "TP"
 sym a8  "RPMx4"
 sym ab  "Mph_FiltH"
+sym ac  "Tcstrt"
 sym ad  "ECT"
 sym ae  "ACT"
 sym b0  "Ppctr"
 sym b1  "PIPcnt"
 sym b4  "ISCdty"
+sym b6  "PIPHi_ETime"
+sym ba  "PIPH_PW"
+sym bc  "Mkay"
+sym c2  "Atmr1"
+sym c3  "Atmr2"
+sym ca  "Kwctr"
 sym cc  "Tipret"
 sym d0  "TPS_Min"
 sym d1  "Synctr"
-sym d2  "Egrdc"
+sym d6  "Egrdc"
 sym d4  "Vip_code"
 sym d7  "Tc_flags"
 sym d7  "Code_75" :T 0 
@@ -876,15 +935,6 @@ sym d7  "Code_77_91" :T 4
 sym d7  "Code_44_73" :T 5 
 sym d7  "Code_42_72" :T 6 
 sym d7  "Code_25_41" :T 7 
-sym d8  "Vip_flags3"
-sym d8  "Sto_holdoff" :T 0 
-sym d8  "Vf1" :T 1 
-sym d8  "Output_tst_mode" :T 2 
-sym d8  "Reqflg" :T 3 
-sym d8  "Sto_pending" :T 4 
-sym d8  "Code_48" :T 5 
-sym d8  "Vip_kam" :T 6 
-sym d8  "Threshold_lvl" :T 7 
 sym d9  "Vip_flags4"
 sym d9  "Vip_fp_override" :T 0 
 sym d9  "Goose" :T 1 
@@ -894,26 +944,26 @@ sym d9  "Kam_codes" :T 4
 sym d9  "Vvsfl1" :T 5 
 sym d9  "Vegrbp" :T 6 
 sym d9  "Rmspru" :T 7 
-sym da  "Vip_Code"
-SYM  dc "High_speed" : T +0
-SYM  dc "Lowspeed_repeat" : T +1
-SYM  dc "Low_speed" : T +2
-SYM  dc "Sto_working" : T +3
-SYM  dc "Sto_fast" : T +4
-SYM  dc "Sto_code" : T +5
-SYM  dc "Sto_off" : T +6
-SYM  dc "Sto_on" : T +7
-SYM  dc "STO_flags"
+#sym da  "Vip_Code"
+sym dc  "STO_flags"
+sym dc  "High_speed" :T 0 
+sym dc  "Lowspeed_repeat" :T 1 
+sym dc  "Low_speed" :T 2 
+sym dc  "Sto_working" :T 3 
+sym dc  "Sto_fast" :T 4 
+sym dc  "Sto_code" :T 5 
+sym dc  "Sto_off" :T 6 
+sym dc  "Sto_on" :T 7 
 sym dd  "Kwctr"
-sym de  "Input_image"
-sym de  "Pip_lvl" :T 0 
-sym de  "Knk_lvl" :T 1 
-sym de  "Bp_lvl" :T 2 
-sym de  "Sti_lvl" :T 3 
-sym de  "Boo_lvl" :T 4 
-sym de  "Cid_lvl" :T 5 
-sym de  "Mph_lvl" :T 6 
-sym de  "Idm_lvl" :T 7 
+sym de  "Vip_flags3"
+sym de  "Sto_holdoff" :T 0 
+sym de  "Vf1" :T 1 
+sym de  "Output_tst_mode" :T 2 
+sym de  "Reqflg" :T 3 
+sym de  "Sto_pending" :T 4 
+sym de  "Code_48" :T 5 
+sym de  "Vip_kam" :T 6 
+sym de  "Threshold_lvl" :T 7 
 sym df  "Psps_lvl" :T 0 
 sym df  "Ecadi" :T 2 
 sym df  "Kam_codes" :T 4 
@@ -997,16 +1047,16 @@ sym ed  "Hvq1" :T 3
 sym ed  "Hcsdq" :T 4 
 sym ed  "Fpwq1" :T 5 
 sym ed  "Lugtmr_dwn" :T 6 
-sym ed  "Lugtmr_up" :T 7 
-sym ee  "Flags_ee"
-sym ee  "Swtfl" :T 0 
-sym ee  "Egofl" :T 1 
-sym ee  "Olflg" :T 2 
-sym ee  "Qclol" :T 3 
-sym ee  "Signdy" :T 4 
-sym ee  "Signdslp" :T 5 
-sym ee  "Indflg" :T 6 
-sym ee  "A3C" :T 7 
+sym ed  "Lugtmr_up" :T 7
+SYM  ee "Swtfl" : T 0
+SYM  ee "Egofl" : T 1
+SYM  ee "Olflg" : T 2
+SYM  ee "Qclol" : T 3
+SYM  ee "Signdy" : T 4
+SYM  ee "Signdslp" : T 5
+SYM  ee "Indflg" : T 6
+SYM  ee "A3C" : T 7
+SYM  ee "Flags_ee"
 sym ef  "Flags_ef"
 sym ef  "Power_up" :T 0 
 sym ef  "Wmegol" :T 1 
@@ -1015,9 +1065,12 @@ sym ef  "Idlflg" :T 3
 sym ef  "Byptmr_dwn" :T 4 
 sym ef  "Lesflg" :T 5 
 sym ef  "Prgflg" :T 6 
-sym ef  "Byptmr_up" :T 7 
+sym ef  "Byptmr_up" :T 7
+sym 100  "TP_Filt"
+sym 102  "EGR_Filt" 
 sym 108  "NBAR"
 sym 10c  "OCC_Raw"
+sym 10e  "Vss_Raw"
 sym 110  "ECT_Raw"
 sym 112  "ACT_Raw"
 sym 114  "EVP_Raw"
@@ -1027,6 +1080,7 @@ sym 11e  "TP_Raw"
 sym 120  "MAF_Raw"
 sym 122  "EVP_Def"
 sym 132  "TOTLDST"
+sym 136  "Putmr"
 sym 13a  "Tstall"
 sym 144  "EIGHTHS_EXT"
 sym 146  "CtnTmr"
@@ -1043,48 +1097,69 @@ sym 1b4  "Code_cnt_ex"
 sym 1bd  "Vip_cnt_ex"
 sym 1d8  "Code_ones_ex"
 sym 1dc  "Occsav"
+sym 1de  "Viplatm"
 sym 1e0  "Vip_nrm_ex"
 sym 1e2  "Vip_nrm2_EX"
 sym 1e4  "Shift_cnt_ex"
 sym 206  "EVPACT"
-sym 208  "EVP"
+sym 218  "EVP"
 sym 21c  "Fuel_sum_l"
 sym 21e  "Fuel_sum_h"
 sym 224  "Aeload"
+sym 24c  "Last_HSO"
 sym 250  "Em"
 sym 260  "Saftot"
 sym 266  "DTPCYC"
 sym 268  "HFPCYC"
 sym 26b  "VBAT"
 sym 270  "LESTMR11"
+sym 282  "SvStack"
 sym 28a  "Prev_PIP_time"
 sym 28c  "Prev_PIP_timeH"
+sym 2de  "Q9"
 sym 314  "hi_slope"
 sym 316  "low_slope"
+sym 31e  "Inj_pip"
 sym 326  "Tipart"
 sym 333  "Tslpip"
 sym 334  "Ampem"
+sym 336  "Vmaf"
+sym 338  "Maf"
 sym 33a  "Archg"
 sym 33c  "Archli"
+sym 33e  "Archi"
+sym 340  "Archfg"
 sym 344  "LOAD"
 sym 348  "PERLOAD"
+sym 34c  "MafTime"
+sym 34e  "AmInt"
+sym 352  "Maf_Ptr"
+sym 354  "RawArchg"
+sym 356  "IntM"
 sym 360  "LAMBSE"
-sym 362  "lAMBSE2"
+sym 362  "LAMBSE2"
 sym 364  "Delopt"
 sym 366  "Vbat"
+sym 372  "Prev_PIP_ETime"
+sym 374  "Prev_PIPH_PW"
+sym 378  "Tl0FLG"
+sym 379  "Difctr"
 sym 382  "Serv_code_tab"
 sym 3d4  "Air37"
+sym 3e0  "RunSum"
 sym 3e8  "Min_PIP_dly"
 sym 3ea  "Sim_Min"
 sym 3ed  "PIPlim"
 sym 3f0  "IpsIBR"
 sym 7b4  "Kamrf1"
 sym 7b6  "Kamrf2"
+sym 7be  "Kam_flags"
 sym 7fc  "KEptzer"
 sym d00  "CC_PRESENT"
 sym 117c  "Z_AFR"
 sym 200e  "CC_EXE_TIME"
 sym 2022  "Register_Pointers"
+sym 9a02  "RATIV"
 sym 9a0a  "DWELLA"
 sym 9a0b  "DWELLM"
 sym 9a0c  "Dwell_Max"
@@ -1100,10 +1175,17 @@ sym 9cf6  "VSS_Type"
 sym 9d11  "OutInj"
 sym 9d18  "Archlk"
 sym 9d1a  "EngDisp"
+sym 9d3d  "LDEH"
+sym 9d3e  "LDEL"
+sym 9d3f  "LDLTM"
+sym 9d40  "LDMH"
+sym 9d42  "LDMHH"
 sym 9d5e  "LamMax"
 sym 9d60  "Lammin"
 sym 9d94  "hi_slope"
 sym 9d96  "low_slope"
+sym 9da4  "SHFHYS"
+sym 9da6  "SHFRPM"
 sym 9db3  "PIPNum"
 sym 9df5  "Niold"
 sym 9df6  "Drv_RPM"
@@ -1113,6 +1195,8 @@ sym a40e  "Func78"
 sym a5e0  "NLMT"
 sym a5fc  "Default_ISCDC"
 sym a5fe  "Default_IdlRPM"
+sym a5ff  "Default_ACT"
+sym a604  "IDLMAF"
 sym a631  "LugTm"
 sym a63a  "Pspshp"
 sym a642  "Splclp"
@@ -1122,23 +1206,39 @@ sym a658  "Retlim"
 sym a659  "Tipinret"
 sym a65a  "TIPINC"
 sym a65c  "spark_max_high_speed_dwell"
+sym a66c  "RPMCNL"
+sym a671  "WINCLD"
 sym a66e  "SPKLIM"
 sym a672  "Kihp"
+sym a676  "TKYON1"
 sym a7ac  "Func90"
 sym ac8e  "Cyl_wrap"
 sym ac92  "InjPP"
 sym ac9c  "Halffuelon"
 sym ac9e  "Halffueloff"
+sym aca8  "Crank_Mode_Exit"
+sym acb6  "Egr_Mult"
+sym acb8  "EGRDCOff"
+sym acba  "EGRDB"
 sym acc3  "EGR_Type"
 sym af30  "ign_type"
+sym af31  "CThigh"
+sym af32  "CTLow"
 sym af33  "Hpcid"
 sym af3b  "TRLOAD"
 sym af3d  "PIPsRev"
 sym af3e  "No_hegos"
+sym af44  "DFMIN0"
 sym af46  "MHPFD"
 sym af56  "Dasmin"
+sym af70  "REQV"
+sym af72  "LEQV"
 sym af8c  "ACTMin"
 sym af8e  "ACTMax"
+sym af90  "Vect5"
+sym af92  "Tapmax"
+sym af94  "Tapmin"
+sym af96  "WigLvl"
 sym af9a  "ECTMin"
 sym af9c  "ECTMax"
 sym b004  "EVPMin"
@@ -1148,3 +1248,4 @@ sym b046  "Vmamin"
 sym b048  "Vmarpm"
 sym b05a  "Veptll"
 sym b05c  "Vepthl"
+sym d4f0  "Univ_ADX_Patch"
